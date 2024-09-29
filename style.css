@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Sigmar", sans-serif;
+}
+
+body {
+  background-color: #ffc684;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container {
+  width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff8f50;
+  border-radius: 10px;
+}
+.addBtn {
+  background-image: url(./images/addPicture.png);
+  background-position: center;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+  margin-right: 20px;
+}
+.input-el {
+  width: 80%;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.bears {
+  height: 150px;
+  width: auto;
+}
+.field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+ul {
+  list-style: none;
+  margin-bottom: 15px;
+  width: 95%;
+  height: auto;
+}
+li {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ffc684;
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+.editBtn {
+  background-image: url(./images/editPicture.png);
+  height: 40px;
+  width: 40px;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.deleteBtn {
+  background-image: url(./images/deletePicture.png);
+  height: 40px;
+  width: 40px;
+  background-position: center;
+  background-size: cover;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.list-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.buttons {
+  padding-top: 15px;
+}
+.hidden {
+  display: none;
+}
+@media (max-width: 700px) {
+  /* … */
+  .main-container {
+    width: 95%;
+  }
+}
