@@ -6,7 +6,7 @@ let myTodo = [];
 
 addBtn.addEventListener("click", function () {
   if (inputEl.value !== "") {
-    myTodo.push(inputEl.value);
+    myTodo.unshift(inputEl.value);
     inputEl.value = "";
     localStorage.setItem("myTodo", JSON.stringify(myTodo));
     render();
