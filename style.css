@@ -94,6 +94,7 @@ li {
   border-radius: 20px;
   background-color: transparent;
   cursor: pointer;
+  margin-top: 5px;
 }
 .list-items {
   width: 100%;
